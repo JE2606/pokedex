@@ -35,8 +35,8 @@ const HomeGrid = () => {
         <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 grid-rows-6 gap-3'>
             {pokemons && pokemons.length > 0 ? (
                 pokemons.map((pokemon) => (
-                    <div key={pokemon.id} className="relative col-span-1 row-span-2">
-                        <div className="group relative w-full h-32 overflow-hidden rounded-md cursor-pointer shadow-sm">
+                    <a href='#' key={pokemon.id} className="relative col-span-1 row-span-2">
+                        <div className="group relative w-full h-32 overflow-hidden rounded-md cursor-pointer">
                             <img
                                 src={pokemon.image}
                                 alt={pokemon.name}
@@ -48,7 +48,7 @@ const HomeGrid = () => {
                                 <p className="text-sm italic">{pokemon.types.join(', ')}</p>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 ))
             ) : (
                 <p>No se encontraron Pokémon.</p>

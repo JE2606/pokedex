@@ -12,11 +12,6 @@
 body {
     background-color: #fcfcfc;
     min-height: 100dvh;
-
-}
-
-section {
-    padding: 0 8em;
 }
 
 .section__home {
